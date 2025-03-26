@@ -1,0 +1,20 @@
+{
+  "name": "first-server",
+  "version": "1.0.0",
+  "description": "my first server",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoDiaz9614/Intro-to-NodeJs---API-s.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoDiaz9614/Intro-to-NodeJs---API-s/issues"
+  },
+  "homepage": "https://github.com/DiegoDiaz9614/Intro-to-NodeJs---API-s#readme"
+}
