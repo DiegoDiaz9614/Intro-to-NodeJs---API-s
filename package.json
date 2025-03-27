@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DiegoDiaz9614/Intro-to-NodeJs---API-s/issues"
   },
-  "homepage": "https://github.com/DiegoDiaz9614/Intro-to-NodeJs---API-s#readme"
+  "homepage": "https://github.com/DiegoDiaz9614/Intro-to-NodeJs---API-s#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
