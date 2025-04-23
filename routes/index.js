@@ -1,7 +1,8 @@
-const router = require("express").Router();
 const myController = require("../controllers");
+const routes = require("express").Router();
 
-router.get("/", myController.awesomeFunction);
-router.get("/ttech", myController.ttechMsg);
+routes.get("/", myController.awesomeFunction);
 
-module.exports = router;
+routes.get("/ttech", myController.tooeleTech);
+
+module.exports = routes;
