@@ -10,7 +10,8 @@ app.use(cors()).use("/", require("./routes"));
 
 mongodb.initDb((err) =>{
   if(err) {
-    console.log(err);
+    console.log("Database init failed",err);
+    return;
   } else{
     app.listen(PORT);
     console.log(
