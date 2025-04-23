@@ -2,9 +2,9 @@
   "name": "first-server",
   "version": "1.0.0",
   "description": "my first server",
-  "main": "script.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node script.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,14 @@
   },
   "homepage": "https://github.com/DiegoDiaz9614/Intro-to-NodeJs---API-s#readme",
   "dependencies": {
-    "express": "^4.21.2"
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.2",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.5.0",
+    "mongodb": "^6.16.0",
+    "swagger-autogen": "^2.23.7"
   }
 }
