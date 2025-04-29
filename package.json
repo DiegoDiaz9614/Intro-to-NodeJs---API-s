@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/DiegoDiaz9614/Intro-to-NodeJs---API-s#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.2",
     "swagger-ui-express": "^5.0.1"
   },

@@ -15,11 +15,11 @@ POST http://localhost:3000/students HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Bruce",
-    "lastName": "Wayne",
-    "email": "batman@supporter.com",
-    "age": 34,
-    "currentCollege": "Assasins Academy"
+    "firstName": "Diego",
+    "lastName": "Diaz",
+    "email": "example@email.com",
+    "age": 20,
+    "currentCollege": "TooeleTech"
 }
 
 ### Update Student
@@ -35,4 +35,33 @@ Content-Type: application/json
 }
 
 ### Delete student
-DELETE http://localhost:3000/students/680a57d76e3c2d8d54d4a691 HTTP/1.1
+DELETE http://localhost:3000/students/680a602d00916068405f470c HTTP/1.1
+
+### Auth Register
+POST http://localhost:3000/auth/register 
+Content-Type: application/json
+
+{
+    "fullName": "John D",
+    "email": "john@example.com",
+    "password": "password123",
+    "userType": "regular"
+}
+
+
+### Auth Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "john@example.com",
+    "password": "password123"
+}
+
+### Auth Logout
+POST http://localhost:3000/auth/logout
+
+###  Protected Route
+GET http://localhost:3000/auth/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmdWxsTmFtZSI6IkpvaG4gRCIsInVzZXJUeXBlIjoicmVndWxhciIsImlhdCI6MTc0NTk0MzA1NSwiZXhwIjoxNzQ1OTQ2NjU1fQ.GvRzL6IybRRwxE52HhDq-rYUdPD8L2e_8XAecLQoW4A
+
