@@ -67,7 +67,7 @@ const register = async (req, res) => {
 const login = async (req, res) => {
     const { email, password } = req.body;
     try {
-        const db = mongodb.getDb().db(); // this is actually still correct if _db = MongoClient
+        const db = mongodb.getDb().db();
         const user = await db.collection("users").findOne({ email });
         if (!user) {
             return res.status(401).json({ message: "Invalid email or password" });
